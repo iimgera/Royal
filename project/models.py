@@ -10,4 +10,4 @@ class Image(models.Model):
         verbose_name_plural = 'Картинки'
 
     def __str__(self):
-        return self.title
+        return self.title if self.title else ""
