@@ -5,7 +5,7 @@ from .views import ImageViewSet
 
 
 router = routers.DefaultRouter()
-router.register(r'images', ImageViewSet)
+router.register(r'images', ImageViewSet, basename='image')
 
 urlpatterns = [
     path('api/', include(router.urls)),
